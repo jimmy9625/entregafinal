@@ -271,9 +271,10 @@ select {
     .grid-container-contactanos {
 
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: auto 90vh 20vh;
+        grid-template-rows: auto 70vh 70vh 20vh;
         grid-template-areas:
             "header"
+            "form"
             "form"
             "footer ";
 
@@ -281,11 +282,20 @@ select {
 
     .form {
         grid-area: form;
-        margin: 10px 20px 20px 5px;
-        height: 80vh;
-        width: 80vh;
+        margin: 1vh;
+        height: 120vh;
+        width: 120vh;
 
 
+    }
+
+    input {
+        margin: 0;
+    }
+    
+    select {
+        margin: 0;
+    
     }
 
     .SectionPlanes {
