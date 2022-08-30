@@ -34,6 +34,9 @@ body {
 .menu {
     display: flex;
     margin: 1vh;
+    text-decoration: none;
+    list-style: none;
+    justify-content: flex-end;
 
 }
 
