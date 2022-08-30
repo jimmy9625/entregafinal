@@ -197,8 +197,22 @@ select {
 
 /*Page Planes*/
 
+.grid-container-planes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 140vh 20vh;
+    grid-template-areas:
+        "header header header"
+        "planes planes planes"
+        "footer footer footer";
+    width: 100%;
+    height: 100%;
+
+}
+
 .SectionPlanes {
 
+    grid-area: planes;
     display: flex;
     height: 150vh;
     justify-content: space-evenly;
@@ -259,20 +273,45 @@ select {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: auto 90vh 20vh;
         grid-template-areas:
-        "header"
-        "form"
-        "footer ";
+            "header"
+            "form"
+            "footer ";
 
     }
+
     .form {
         grid-area: form;
         margin: 10px 20px 20px 5px;
         height: 80vh;
         width: 80vh;
-     
-    
+
+
     }
-    
+
+    .SectionPlanes {
+
+
+        height: 300vh;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .grid-container-planes {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto 150vh 150vh 20vh;
+        grid-template-areas:
+            "header"
+            "planes"
+            "planes"
+            "footer";
+
+
+
+    }
+
+
 
 
 }
