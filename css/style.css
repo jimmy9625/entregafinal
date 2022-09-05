@@ -231,6 +231,85 @@ select {
     background-color: rgb(172, 172, 172);
 }
 
+/* Page clases*/
+.grid-container-clases {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 50vh 50vh 50vh 20vh;
+    grid-template-areas:
+        "header header header"
+        "clase1 clase1 clase1"
+        "clase2 clase2 clase2"
+        "clase3 clase3 clase3"
+        "footer footer footer";
+    width: 100%;
+    height: 100%;
+
+}
+
+.sectionClase1 {
+    grid-area:clase1 ;
+    padding: 5vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+.sectionClase2 {
+    grid-area:clase2 ;
+    padding: 5vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+
+}
+.sectionClase3 {
+    grid-area:clase3 ;
+    padding: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+
+}
+
+.imageClase {
+
+    width: 50vh;
+    height: 40vh;
+}
+
+.textClase {
+    display: flex;
+    width: 80vh;
+    height: 50vh;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+
+}
+.tituloClase {
+
+    padding: 2vh;
+    overflow: hidden;
+    text-align: center;
+
+}
+
+.parrafoClase {
+
+    padding: 3vh;
+    overflow: hidden;
+    text-align: center;
+
+}
 
 
 
@@ -292,10 +371,10 @@ select {
     input {
         margin: 0;
     }
-    
+
     select {
         margin: 0;
-    
+
     }
 
     .SectionPlanes {
@@ -321,6 +400,40 @@ select {
 
     }
 
+    .grid-container-clases {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto 80vh 80vh 80vh 20vh;
+        grid-template-areas:
+            "header  "
+            "clase1  "
+            "clase2  "
+            "clase3  "
+            "footer  ";
+        width: 100%;
+        height: 100%;
+    
+    }
+
+
+
+    .sectionClase1 {
+       
+        flex-direction: column;
+    
+    }
+    .sectionClase2 {
+      
+    
+        flex-direction: column;
+    
+    }
+    .sectionClase3 {
+        flex-direction: column;
+    
+    
+    
+    }
 
 
 
