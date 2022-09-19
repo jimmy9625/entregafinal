@@ -1,11 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+
 .header {
     grid-area: header;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: rgba(110, 108, 108, 0.699);
 
 
 }
+
 
 .menu {
     display: flex;
@@ -18,16 +24,17 @@
 
 .logoMenu {
     height: 12vh;
-}
+}   
 
-.optionMenu {
-    padding: 0vh 2vh 5vh 0vh;
-}
+
 
 .textMenu {
-    color: white;
+    color: #bf930d;;
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
 
-
+.textMenu:hover
+{
+    color: white;
 }
