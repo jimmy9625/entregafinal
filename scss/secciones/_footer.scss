@@ -26,3 +26,21 @@
     height: 12vh;
 
 }
+
+@media (max-width: 1024px)
+{
+
+    .LogoFooter {
+
+        padding: 1vh;
+        width: 8vh;
+        height: 8vh;
+    
+    }
+    .social{
+        padding: 1vh;
+        font-size: 2vh;
+
+    }
+
+}
