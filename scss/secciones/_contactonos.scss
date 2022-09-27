@@ -40,7 +40,7 @@
 
     .form {
 
-        width: 35vh;
+        width: 37vh;
         height: 55vh;
         margin: 10vh 5vh 10vh 5vh;
     }
@@ -51,13 +51,12 @@
 
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto 35vh 35vh 20vh;
+        grid-template-rows: auto 35vh 35vh 17vh;
         grid-template-areas:
             "header header  "
             "form form "
             "form form "
             "footer footer  ";
-
         overflow: hidden;
         background-size: contain;
 

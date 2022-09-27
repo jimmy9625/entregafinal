@@ -1,0 +1,129 @@
+.grid-container-clases {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 60vh 60vh 60vh 20vh;
+    grid-template-areas:
+        "header header header header"
+        "section1 section1 section1 section1"
+        "section2 section2 section2 section2"
+        "section3 section3 section3 section3"
+        "footer footer footer footer";
+    width: 100%;
+    height: 100%;
+}
+
+.sectionClase1 {
+    display: flex;
+    grid-area: section1;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.sectionClase2 {
+    display: flex;
+    grid-area: section2;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionClase3 {
+    display: flex;
+    grid-area: section3;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.textClase {
+    width: 80vh;
+    margin: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .parrafoClase {
+        color: white;
+
+    }
+
+    .tituloClase {
+        color: #bf930d;
+        margin: 5vh;
+    }
+}
+
+.videoClases {
+    width: 30% !important;
+    height: 70% !important;
+}
+
+
+@media (max-width: 1024px)
+{
+
+
+    .grid-container-clases {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 20vh  110vh 90vh 90vh 20vh;
+        grid-template-areas:
+            "header header  "
+            "section1 section1  "
+            "section2 section2  "
+            "section3 section3  "
+            "footer footer  ";
+    }
+      
+    .sectionClase1 {
+        flex-direction: column;
+        height: 40vh;
+        margin: 30vh 2vh 2vh 2vh;
+    }
+
+    .sectionClase2 {
+        flex-direction: column;
+        height: 40vh;
+        margin: 10vh 2vh 2vh 2vh;
+
+    }
+    .sectionClase3 {
+        flex-direction: column;
+        height: 40vh;
+        margin: 10vh 2vh 2vh 2vh;
+
+
+    }
+
+    .videoClases {
+        width: 100% !important;
+        height: 80% !important;
+    }
+
+    .textClase {
+        width: 35vh;
+        margin: 5vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        .parrafoClase {
+            color: white;
+    
+        }
+    
+        .tituloClase {
+            color: #bf930d;
+            margin: 5vh;
+        }
+    }
+    
+
+   
+
+}
