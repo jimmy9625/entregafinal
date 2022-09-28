@@ -1,0 +1,72 @@
+.form {
+
+    display: flex;
+    margin: 20vh 60vh 20vh 60vh;
+
+}
+
+.buttons {
+    display: flex;
+    height: 20vh;
+    width: 60vh;
+    justify-content: space-evenly;
+
+}
+
+.buttonIngresar {
+    height: 10vh;
+    width: 20vh;
+    background-color: rgba(110, 108, 108, 0.699);
+    border-color: goldenrod;
+    font-weight: bold;
+}
+
+.buttonRegistrar {
+
+    height: 10vh;
+    width: 20vh;
+    background-color: black;
+    color: white;
+    border-color: goldenrod;
+    font-weight: bold;
+
+
+
+
+
+}
+
+.recuperar {
+    color: goldenrod;
+    text-decoration: none;
+}
+
+.textform {
+    font-weight: bold;
+
+
+}
+
+@media (max-width: 1024px) {
+    .form {
+        height: 80vh;
+        width: 40vh;
+
+        margin: 5vh 2vh 5vh 3vh;
+
+    }
+
+    .buttonRegistrar {
+        height: 5vh;
+        width: 10vh;
+    }
+
+    .buttonIngresar {
+        height: 5vh;
+        width: 10vh;
+    }
+    .buttons{
+        height: 20vh;
+        width: 30vh;
+    }
+}
