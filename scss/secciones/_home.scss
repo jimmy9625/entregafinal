@@ -28,6 +28,7 @@
     width: 100%;
     object-fit: cover;
     grid-area: 0;
+    overflow: hidden;
 }
 
 
@@ -67,10 +68,35 @@
 
 .tituloConetido {
     padding: 0hv 0vh 5vh 0vh;
-    color: white;
+    color: #bf930d;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 3vh;
 
 
 }
+
+@media (max-width: 1024px)
+ {
+    .grid-container {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto 30vh 50vh 50vh 17vh;
+        grid-template-areas:
+            "header header"
+            "banner banner  "
+            "contenido1 contenido1 "
+            "contenido2 contenido2 "
+            "footer footer  ";
+        width: 100%;
+        height: 100%;
+    
+    }
+
+    
+   
+
+ }   
+
+    

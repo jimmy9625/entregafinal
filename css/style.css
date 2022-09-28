@@ -1,7 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
 .footer {
   grid-area: footer;
   display: flex;
-  background-color: rgba(128, 128, 128, 0.838);
+  background-color: rgba(110, 108, 108, 0.699);
   justify-content: center; }
 
 .social {
@@ -19,29 +20,40 @@
   width: 12vh;
   height: 12vh; }
 
+@media (max-width: 1024px) {
+  .LogoFooter {
+    padding: 1vh;
+    width: 8vh;
+    height: 8vh; }
+  .social {
+    padding: 1vh;
+    font-size: 2vh; } }
+
 .header {
   grid-area: header;
   display: flex;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  background-color: rgba(110, 108, 108, 0.699); }
 
 .menu {
   display: flex;
   margin: 1vh;
   text-decoration: none;
   list-style: none;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  overflow: hidden; }
 
 .logoMenu {
   height: 12vh; }
 
-.optionMenu {
-  padding: 0vh 2vh 5vh 0vh; }
-
 .textMenu {
-  color: white;
+  color: #bf930d;
   text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: 'Roboto Condensed', sans-serif; }
+
+.textMenu:hover {
+  color: white; }
 
 .grid-container {
   display: grid;
@@ -61,7 +73,8 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
-  grid-area: 0; }
+  grid-area: 0;
+  overflow: hidden; }
 
 .card, .contenido1, .contenido2 {
   margin: 0vh 5vh 3vh 5vh;
@@ -86,10 +99,181 @@
 
 .tituloConetido {
   padding: 0hv 0vh 5vh 0vh;
-  color: white;
+  color: #bf930d;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 3vh; }
+
+@media (max-width: 1024px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 30vh 50vh 50vh 17vh;
+    grid-template-areas: "header header" "banner banner  " "contenido1 contenido1 " "contenido2 contenido2 " "footer footer  ";
+    width: 100%;
+    height: 100%; } }
+
+.grid-container-contactanos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto 120vh 20vh;
+  grid-template-areas: "header header header header" "form form form form" "footer footer footer footer";
+  width: 100%;
+  height: 100%;
+  background-image: url("https://lh3.googleusercontent.com/p/AF1QipMY7TFn9OP8T4wXR3RqVTwGjRvqulbBhcTOjwyf=w1080-h608-p-no-v0");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.form {
+  display: flex;
+  grid-area: form;
+  background-color: rgba(143, 142, 142, 0.849);
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: center;
+  align-items: center;
+  width: 100vh;
+  height: 100vh;
+  margin: 10vh 50vh 10vh 50vh; }
+
+.form-label {
+  color: black;
+  font-weight: bold; }
+
+@media (max-width: 1024px) {
+  .form {
+    width: 37vh;
+    height: 55vh;
+    margin: 10vh 5vh 10vh 5vh; }
+  .grid-container-contactanos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 35vh 35vh 17vh;
+    grid-template-areas: "header header  " "form form " "form form " "footer footer  ";
+    overflow: hidden;
+    background-size: contain; } }
+
+.SectionPlanes {
+  margin: 15vh 0vh 0vh 0vh;
+  grid-area: sectionPlanes;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+.grid-container-planes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto 80vh 80vh 20vh;
+  grid-template-areas: "header header header header" "sectionPlanes sectionPlanes sectionPlanes sectionPlanes" "sectionPlanes sectionPlanes sectionPlanes sectionPlanes" "footer footer footer footer";
+  width: 100%;
+  height: 100%; }
+
+.cardImage {
+  overflow: hidden;
+  height: 22rem;
+  width: 22rem; }
+
+.cardPlan {
+  width: 22rem; }
+
+.cardPlan:hover {
+  width: 24rem; }
+  .cardPlan:hover .cardImage {
+    height: 24rem;
+    width: 24rem; }
+
+.btnConocer {
+  text-decoration: none;
+  color: white; }
+
+.btnConocer:hover {
+  color: #bf930d; }
+
+@media (max-width: 1024px) {
+  .grid-container-planes {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto 80vh  80vh 80vh 80vh   20vh;
+    grid-template-areas: "header   " "sectionPlanes " "sectionPlanes " "sectionPlanes " "sectionPlanes " "footer   "; }
+  .SectionPlanes {
+    flex-direction: column;
+    justify-content: space-between; } }
+
+.grid-container-clases {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto 60vh 60vh 60vh 20vh;
+  grid-template-areas: "header header header header" "section1 section1 section1 section1" "section2 section2 section2 section2" "section3 section3 section3 section3" "footer footer footer footer";
+  width: 100%;
+  height: 100%; }
+
+.sectionClase1 {
+  display: flex;
+  grid-area: section1;
+  height: 60vh;
+  align-items: center;
+  justify-content: center; }
+
+.sectionClase2 {
+  display: flex;
+  grid-area: section2;
+  height: 60vh;
+  align-items: center;
+  justify-content: center; }
+
+.sectionClase3 {
+  display: flex;
+  grid-area: section3;
+  height: 60vh;
+  align-items: center;
+  justify-content: center; }
+
+.textClase {
+  width: 80vh;
+  margin: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .textClase .parrafoClase {
+    color: white; }
+  .textClase .tituloClase {
+    color: #bf930d;
+    margin: 5vh; }
+
+.videoClases {
+  width: 30% !important;
+  height: 70% !important; }
+
+@media (max-width: 1024px) {
+  .grid-container-clases {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 20vh  110vh 90vh 90vh 20vh;
+    grid-template-areas: "header header  " "section1 section1  " "section2 section2  " "section3 section3  " "footer footer  "; }
+  .sectionClase1 {
+    flex-direction: column;
+    height: 40vh;
+    margin: 30vh 2vh 2vh 2vh; }
+  .sectionClase2 {
+    flex-direction: column;
+    height: 40vh;
+    margin: 10vh 2vh 2vh 2vh; }
+  .sectionClase3 {
+    flex-direction: column;
+    height: 40vh;
+    margin: 10vh 2vh 2vh 2vh; }
+  .videoClases {
+    width: 100% !important;
+    height: 80% !important; }
+  .textClase {
+    width: 35vh;
+    margin: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .textClase .parrafoClase {
+      color: white; }
+    .textClase .tituloClase {
+      color: #bf930d;
+      margin: 5vh; } }
 
 body {
   background-color: black; }
